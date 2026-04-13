@@ -60,6 +60,17 @@ vim.keymap.set({ 'n' }, '<A-j>', '<C-w>j')
 vim.keymap.set({ 'n' }, '<A-k>', '<C-w>k')
 vim.keymap.set({ 'n' }, '<A-l>', '<C-w>l')
 
+-- Map emacs keybindings for Insert mode
+vim.keymap.set({'i'}, '<C-a>', '<C-\\><C-n>I')
+vim.keymap.set({'i'}, '<C-e>', '<End>')
+vim.keymap.set({'i'}, '<C-p>', '<Up>')
+vim.keymap.set({'i'}, '<C-n>', '<Down>')
+vim.keymap.set({'i'}, '<C-f>', '<Right>')
+vim.keymap.set({'i'}, '<C-b>', '<Left>')
+vim.keymap.set({'i'}, '<C-d>', '<Del>')
+vim.keymap.set({'i'}, '<A-b>', '<C-Left>')
+vim.keymap.set({'i'}, '<A-f>', '<C-Right>')
+
 -- [[ Basic Autocommands ]].
 -- See `:h lua-guide-autocommands`, `:h autocmd`, `:h nvim_create_autocmd()`
 
