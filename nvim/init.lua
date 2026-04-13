@@ -12,8 +12,8 @@ vim.o.number = true
 vim.opt.expandtab = true
 vim.opt.tabstop = 4
 
--- Show column 80
-vim.opt.colorcolumn = "80"
+-- Show column 81
+vim.opt.colorcolumn = "81"
 
 -- Set number of spaces added by >> and <<
 vim.opt.shiftwidth = 4
@@ -89,3 +89,12 @@ end, { desc = 'Print the git blame for the current line' })
 -- For example, to add the "nohlsearch" package to automatically turn off search highlighting after
 -- 'updatetime' and when going to insert mode
 vim.cmd('packadd! nohlsearch')
+
+-- Set textwidth for Markdown files. Autoformat with gqG
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = "markdown",
+    callback = function()
+        vim.opt_local.textwidth = 80
+        vim.opt_local.formatoptions:append("t")
+    end,
+})
