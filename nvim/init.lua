@@ -2,6 +2,9 @@
 -- Set leader
 vim.g.mapleader = ' '
 
+-- Set cursor
+vim.opt.guicursor = ''
+
 -- Set colorscheme
 vim.cmd("colorscheme lunaperche")
 
@@ -13,7 +16,7 @@ vim.opt.expandtab = true
 vim.opt.tabstop = 4
 
 -- Show column 81
-vim.opt.colorcolumn = "81"
+vim.opt.colorcolumn = "80"
 
 -- Set number of spaces added by >> and <<
 vim.opt.shiftwidth = 4
@@ -105,7 +108,7 @@ vim.cmd('packadd! nohlsearch')
 vim.api.nvim_create_autocmd("FileType", {
     pattern = "markdown",
     callback = function()
-        vim.opt_local.textwidth = 80
+        vim.opt_local.textwidth = 79
         vim.opt_local.formatoptions:append("t")
     end,
 })
