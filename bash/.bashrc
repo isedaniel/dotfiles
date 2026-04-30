@@ -18,3 +18,5 @@ PS1="${BLUE}\u@\h${RESET} ${GREEN}\w${RESET} \n \$ "
 # Add ~/.local/bin to PATH
 export PATH="$PATH:$HOME/.local/bin"
 
+# Add nvm support
+. /usr/share/nvm/init-nvm.sh
