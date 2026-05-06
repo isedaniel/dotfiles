@@ -39,7 +39,7 @@ vim.o.wrap = false
 vim.o.cursorline = true
 
 -- Set lines above the cursor
-vim.o.scrolloff = 10
+vim.o.scrolloff = 8
 
 -- Show <tab> and trailing spaces
 vim.o.list = true
