@@ -19,9 +19,13 @@ setopt prompt_subst
 export PROMPT=$'%F{green}%n@%m%f %F{cyan}%~%f %F{202}${vcs_info_msg_0_}%f\n %# '
 
 # set ll alias
-alias ll="ls -l"
+alias ll="ls -lAh"
 
 # set nvm conf
 export NVM_DIR="$HOME/.nvm"
 [ -s "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" ] && \. "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" # This loads nvm
 [ -s "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
+
+
+# Doom emacs bin to PATH
+export PATH="$HOME/.config/emacs/bin:$PATH"
