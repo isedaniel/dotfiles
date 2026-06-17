@@ -20,3 +20,6 @@ export PATH="$PATH:$HOME/.local/bin"
 
 # Add nvm support
 . /usr/share/nvm/init-nvm.sh
+
+# Add bin/doom to PATH
+export PATH="$PATH:$HOME/.config/emacs/bin"
