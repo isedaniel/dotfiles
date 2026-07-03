@@ -29,3 +29,7 @@ export NVM_DIR="$HOME/.nvm"
 
 # Doom emacs bin to PATH
 export PATH="$HOME/.config/emacs/bin:$PATH"
+
+# Dotnet to PATH
+export DOTNET_ROOT="/opt/homebrew/opt/dotnet/libexec"
+
